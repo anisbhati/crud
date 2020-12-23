@@ -1,5 +1,11 @@
 package com.anisbatcgdemo.controller;
 
-public class DataserviceController {
+import org.springframework.web.bind.annotation.RequestMapping;
 
+public class DataserviceController {
+    
+	@RequestMapping("/")
+	public String getTest() {
+		return "running ...... ";
+	}
 }
